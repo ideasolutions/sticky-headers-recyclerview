@@ -51,7 +51,7 @@ public class HeaderRenderer {
       canvas.clipRect(mTempRect);
     }
 
-    canvas.translate(offset.left, offset.top);
+    canvas.translate(0, offset.top);
 
     header.draw(canvas);
     canvas.restore();
