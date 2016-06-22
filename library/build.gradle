@@ -20,7 +20,7 @@ dependencies {
     compile "com.android.support:recyclerview-v7:${rootProject.supportLibsVersion}"
 }
 
-apply from: 'gradle-maven-push.gradle'
+apply from: rootProject.file('gradle/gradle-is-mvn-push.gradle')
 
 afterEvaluate {
     androidJavadocs.classpath += project.android.libraryVariants.toList().first().javaCompile.classpath
